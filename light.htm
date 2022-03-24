@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIGHT</title>
+    <link href="lit.css" rel="StyleSheet">
+</head>
+<body>
+    <header>
+        <a href="#" class="sr17">S R 1 7</a>
+        <nav>
+            <ul>
+                <li><a href="responsive.htm" class="active">HOME</a></li>
+                <li><a href="setu.htm">NEON</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </nav>
+        <div class="clearfix"></div>
+        <button type="button" onclick="togglebtn()" id="btn"><span></span></button>
+    </header>
+    <div class="lamp-container">
+        <img src="lamp.png" class="lamp">
+        <img src="light.png" class="light" id="light">
+    </div>
+    <div class="sr" id="see">
+        <p> SETU SINGH</p>
+    </div>
+    <script>
+        var btn= document.getElementById("btn");
+        var light= document.getElementById("light");
+        var see= document.getElementById("see");
+
+        function togglebtn(){
+            btn.classList.toggle("active")
+            light.classList.toggle("on")
+            see.classList.toggle("see")
+        }
+    </script>
+    
+</body>
+</html>
